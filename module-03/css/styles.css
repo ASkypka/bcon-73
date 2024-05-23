@@ -121,6 +121,7 @@ img {
 
 .logo {
     display: inline-flex;
+    align-items: center;
     font-style: italic;
     font-weight: 700;
     font-size: 18px;
