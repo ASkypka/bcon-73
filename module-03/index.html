@@ -25,64 +25,69 @@
   <body>
     <!-- #region Header -->
     <header class="header" id="home">
-      <nav class="header-nav">
-        <a class="logo" href="./index.html"
-          >SIMPLY <span class="logo-span">CHOCOLATE</span>
-          <img src="./images/chocolate.svg" alt="logo" />
-        </a>
-        <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="./index.html">Home</a>
+      <div class="container">
+        <nav class="header-nav">
+          <a class="logo" href="./index.html"
+            >SIMPLY<span class="logo-span">&nbsp;CHOCOLATE</span>
+            <img class="logo-img" src="./images/chocolate.svg" alt="logo" />
+          </a>
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#made">How it’s made?</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-list-icon">
+          <li>
+            <a
+              class="header-iten-link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link Facebook"
+              ><img
+                src="./images/icons/facebook.svg"
+                alt="facebook"
+                width="24"
+                height="24"
+            /></a>
           </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#made">How it’s made?</a>
+          <li>
+            <a
+              class="header-iten-link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link instagram"
+              ><img
+                src="./images/icons/instagram.svg"
+                width="24"
+                height="24"
+                alt="instagram"
+            /></a>
           </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="#">Chocolate is loved</a>
+          <li>
+            <a
+              class="header-iten-link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link twitter"
+              ><img
+                src="./images/icons/twitter.svg"
+                width="24"
+                height="24"
+                alt="twitter"
+            /></a>
           </li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link Facebook"
-            ><img
-              src="./images/icons/facebook.svg"
-              alt="facebook"
-              width="24"
-              height="24"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link instagram"
-            ><img
-              src="./images/icons/instagram.svg"
-              width="24"
-              height="24"
-              alt="instagram"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link twitter"
-            ><img
-              src="./images/icons/twitter.svg"
-              width="24"
-              height="24"
-              alt="twitter"
-          /></a>
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- #endregion /Header -->
     <main>
@@ -90,24 +95,28 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
+            Treat yourself or a loved one to our&nbsp;finest ingredients for a
+            moment of pure delight!
           </h1>
-          <ul class="hero-list">
-            <li class="hero-item">
-              <button class="btn btn-buy" type="button">Buy now</button>
-            </li>
-            <li class="hero-item">
-              <button class="btn btn-made" type="button">How it’s made</button>
-            </li>
-          </ul>
-          <a href="#" class="scroll-link"
-            >scroll down<img
-              src="./images/icons/arrow-down.svg"
-              alt="scroll down"
-              width="22"
-              height="22"
-          /></a>
+          <div class="hero-wrapper">
+            <ul class="hero-list">
+              <li class="hero-item">
+                <button class="btn btn-buy" type="button">Buy now</button>
+              </li>
+              <li class="hero-item">
+                <button class="btn btn-made" type="button">
+                  How it’s made
+                </button>
+              </li>
+            </ul>
+            <a href="#" class="scroll-link"
+              >scroll down<img
+                src="./images/icons/arrow-down.svg"
+                alt="scroll down"
+                width="22"
+                height="22"
+            /></a>
+          </div>
         </div>
       </section>
       <!-- #endregion /Hero -->
@@ -232,44 +241,52 @@
           <h2 class="made-title title-decs">
             How it’s <span class="orange">made</span>?
           </h2>
-          <img
-            src="./images/made/image.jpg"
-            alt="chocolate"
-            width="600"
-            height="400"
-          />
-          <h3 class="made-subtitle">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ol class="made-list">
-            <li class="made-item">
-              <p>
-                Heat the milk in a saucepan without bringing it to a boil. Add
-                sugar and cocoa powder.
-              </p>
-            </li>
-            <li class="made-item">
-              <p>
-                At the same time, prepare a water bath. Melt the butter on it.
-              </p>
-            </li>
-            <li class="made-item">
-              <p>
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly
-                with a silicone spatula so that the mass becomes uniform and
-                silky.
-              </p>
-            </li>
-            <li class="made-item">
-              <p>Heat the mixture over low heat, letting it barely boil.</p>
-            </li>
-            <li class="made-item">
-              <p>
-                Pour the chocolate into special containers (can be replaced with
-                ice molds). Allow to cool and harden.
-              </p>
-            </li>
-          </ol>
+          <div class="made-wrapper">
+            <div class="made-left">
+              <img
+                src="./images/made/image.jpg"
+                alt="chocolate"
+                width="600"
+                height="400"
+              />
+            </div>
+            <div class="made-right">
+              <h3 class="made-subtitle">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ol class="made-list">
+                <li class="made-item">
+                  <p>
+                    Heat the milk in a saucepan without bringing it to a boil.
+                    Add sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p>
+                    At the same time, prepare a water bath. Melt the butter on
+                    it.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p>
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    thoroughly with a silicone spatula so that the mass becomes
+                    uniform and silky.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p>Heat the mixture over low heat, letting it barely boil.</p>
+                </li>
+                <li class="made-item">
+                  <p>
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
       </section>
       <!-- #endregion Made -->
@@ -388,7 +405,9 @@
                 width="368"
                 height="464"
               />
-              <h3 class="sellers-sup-title">CHOCOLATE WITH NUTS</h3>
+              <div class="sellers-item-wrapper">
+                <h3 class="sellers-sup-title">CHOCOLATE WITH NUTS</h3>
+              </div>
             </li>
             <li class="sellers-item">
               <img
@@ -397,7 +416,9 @@
                 width="368"
                 height="464"
               />
-              <h3 class="sellers-sup-title">CHOCOLATE WITH FRUITS</h3>
+              <div class="sellers-item-wrapper">
+                <h3 class="sellers-sup-title">CHOCOLATE WITH FRUITS</h3>
+              </div>
             </li>
             <li class="sellers-item">
               <img
@@ -406,7 +427,9 @@
                 width="368"
                 height="464"
               />
-              <h3 class="sellers-sup-title">DARK CHOCOLATE</h3>
+              <div class="sellers-item-wrapper">
+                <h3 class="sellers-sup-title">DARK CHOCOLATE</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -462,7 +485,7 @@
               </p>
             </li>
           </ul>
-          <button type="button">Leave a review</button>
+          <button class="btn-reviews" type="button">Leave a review</button>
         </div>
       </section>
       <!-- #endregion Reviews -->
@@ -471,84 +494,94 @@
     <!-- #region Footer -->
     <footer class="footer">
       <div class="container">
-        <p class="footer-slogan">Chocolate a delicious cure for a bad day</p>
-        <p class="footer-caption">Social networks</p>
-        <ul class="socials">
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook link"
-            >
-              <img
-                src="./images/icons/facebook.svg"
-                alt="Facebook icon"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram link"
-            >
-              <img
-                src="./images/icons/instagram.svg"
-                alt="Instagram icon"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter link"
-            >
-              <img
-                src="./images/icons/twitter.svg"
-                alt="Twitter icon"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-        </ul>
-        <address class="footer-address">
-          <p class="footer-caption">Contact us</p>
-          <ul class="footer-contacts">
-            <li class="footer-contacts-item">
-              <a class="footer-contacts-link" href="tel:+380684439426"
-                >+380 (68) 443-94-26</a
-              >
+        <div class="footer-top">
+          <p class="footer-slogan">
+            <span class="orange">Chocolate</span> a delicious cure for a bad day
+          </p>
+          <div class="footer-wrapper">
+            <p class="footer-caption">Social networks</p>
+            <ul class="socials">
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook link"
+                >
+                  <img
+                    src="./images/icons/facebook.svg"
+                    alt="Facebook icon"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram link"
+                >
+                  <img
+                    src="./images/icons/instagram.svg"
+                    alt="Instagram icon"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter link"
+                >
+                  <img
+                    src="./images/icons/twitter.svg"
+                    alt="Twitter icon"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <address class="footer-address">
+            <p class="footer-caption">Contact us</p>
+            <ul class="footer-contacts">
+              <li class="footer-contacts-item">
+                <a class="footer-contacts-link" href="tel:+380684439426"
+                  >+380 (68) 443-94-26</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <a
+                  class="footer-contacts-link"
+                  href="mailto:simplychoc@gmail.com"
+                  >simplychoc@gmail.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#made">Home</a>
             </li>
-            <li class="footer-contacts-item">
-              <a class="footer-contacts-link" href="mailto:simplychoc@gmail.com"
-                >simplychoc@gmail.com</a
-              >
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#made">How it’s made?</a>
+            </li>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
-        </address>
-        <ul class="footer-menu">
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#made">Home</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#made">How it’s made?</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#reviews">Chocolate is loved</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </footer>
     <!-- #endregion Footer -->
