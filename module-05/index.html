@@ -640,7 +640,7 @@
     </a> -->
 
     <!-- #region Modal -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="close-modal-btn" type="button">
           <svg class="close-modal-icon" height="14" width="14">
@@ -650,32 +650,51 @@
         <p class="modal-text">
           LEAVE A REVIEW ABOUT <span class="orange">OUR CHOCOLATE</span>
         </p>
-        <form name="form_chocolate">
+        <form name="form_chocolate" autocomplete="off">
           <div class="modal-wrapper">
             <label class="modal-label" for="user_name">Name</label>
             <div class="modal-filed">
               <input
-                class="modal-filed-input"
+                class="modal-fieled-input"
                 id="user_name"
                 type="text"
                 name="user_name"
+                required
+               
+                maxlength="40"
+                placeholder=" "
+                pattern="[A-Za-z0-9]{6,}"
+                
               />
               <svg class="modal-filed-icon" width="24" height="24">
                 <use href="./images/icons.svg#user"></use>
               </svg>
+              <svg class="modal-icon-valid" width="24" height="24">
+                <use class="success" href="./images/icons.svg#success"></use>
+                <use class="error" href="./images/icons.svg#error"></use>
+              </svg>
+              <span class="modal-text-invalid">Ви написали менше 6 символів.</span>
             </div>
           </div>
           <div class="modal-wrapper">
             <label class="modal-label" for="user_email">Email</label>
             <div class="modal-filed">
               <input
-                class="modal-filed-input"
+                class="modal-fieled-input"
                 id="user_email"
                 type="email"
                 name="user_email"
+                required
+                placeholder=" "
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+
               />
               <svg class="modal-filed-icon" width="24" height="24">
                 <use href="./images/icons.svg#mail"></use>
+              </svg>
+              <svg class="modal-icon-valid" width="24" height="24">
+                <use class="success" href="./images/icons.svg#success"></use>
+                <use class="error" href="./images/icons.svg#error"></use>
               </svg>
             </div>
           </div>
@@ -683,7 +702,7 @@
             <label class="modal-label" for="user_phone">Phone number</label>
             <div class="modal-filed">
               <input
-                class="modal-filed-input"
+                class="modal-fieled-input"
                 id="user_phone"
                 type="tel"
                 name="user_phone"
@@ -700,21 +719,22 @@
               name="coment-user"
               id="coment_user"
               placeholder="Enter text"
+              maxlength="700"
             ></textarea>
           </div>
 
-          <div>
+          <div class="modal-wrapper-checkbox">
             <input
-              class="visually-hidden checkbox"
+              class="checkbox visually-hidden"
               type="checkbox"
               name="checkbox_user"
               id="checkbox_user"
             />
-            <label for="checkbox_user"
+            <label for="checkbox_user" class="checkbox_user"
               ><span class="checkbox-user-span">
                 <svg width="10" height="8">
                   <use href="./images/icons.svg#vector"></use></svg></span
-              >I accept the terms and conditions of the<a
+              >I accept the terms and conditions of the&nbsp;<a
                 class="checkbox-user-link"
                 href="#"
                 >Privacy Policy</a
@@ -722,7 +742,7 @@
             >
           </div>
 
-          <button type="submit">Send</button>
+          <button class="form-btn" type="submit">Send</button>
         </form>
       </div>
     </div>

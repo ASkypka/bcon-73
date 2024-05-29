@@ -890,6 +890,17 @@ img {
     justify-content: center;
     align-items: center; */
     z-index: 999;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: visibility, opacity, pointer-events;
+}
+
+.backdrop.is-open {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .modal {
@@ -956,7 +967,7 @@ img {
     position: relative;
 }
 
-.modal-filed-input {
+.modal-fieled-input {
     height: 68px;
     width: 100%;
     border: 1.50px solid rgba(17, 17, 17, 0.05);
@@ -965,7 +976,21 @@ img {
     padding: 24px 24px 24px 62px;
     background-color: transparent;
     color: #404040;
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color;
 }
+
+
+
+.modal-fieled-input:focus {
+    border-color: #fd9222; 
+}
+
+.modal-fieled-input:focus + .modal-filed-icon {
+    stroke: #fd9222;
+}
+
+
 
 .modal-filed-icon {
     position: absolute;
@@ -974,9 +999,69 @@ img {
     transform: translateY(-50%);
     stroke: #404040;
     fill: transparent;
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: stroke;
 }
 
-.modal-textarea-wrapper {}
+.modal-icon-valid {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+
+.success,
+.error {
+    opacity: 0;
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: opacity;
+}
+
+.modal-fieled-input:not(:placeholder-shown):required:valid {
+    border-color: rgb(12, 234, 12);
+}
+
+.modal-fieled-input:not(:placeholder-shown):required:valid ~ .modal-icon-valid > .success  {
+    opacity: 1;
+}
+
+.modal-fieled-input:not(:placeholder-shown):required:valid + .modal-filed-icon  {
+    stroke: rgb(12, 234, 12);
+}
+
+.modal-fieled-input:not(:placeholder-shown):required:invalid {
+    border-color: rgb(234, 12, 12);
+}
+
+.modal-fieled-input:not(:placeholder-shown):required:invalid ~ .modal-icon-valid > .error  {
+    opacity: 1;
+}
+
+.modal-fieled-input:not(:placeholder-shown):required:invalid + .modal-filed-icon  {
+    stroke: rgb(234, 12, 12);
+}
+
+.modal-textarea-wrapper {
+    margin-bottom: 18px;
+}
+
+.modal-text-invalid {
+    position: absolute;
+    top: 100%;
+    left: 24%;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgb(234, 12, 12);
+    opacity: 0;
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: opacity;
+
+}
+
+.modal-fieled-input:not(:placeholder-shown):required:invalid ~ .modal-text-invalid {
+    opacity: 1;
+}
 
 
 .modal-textarea {
@@ -988,7 +1073,13 @@ img {
     outline: transparent;
     padding: 22px 24px;
     color: #404040;
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color;
 
+}
+
+.modal-textarea:focus {
+border-color: #fd9222;
 }
 
 .modal-textarea::placeholder {
@@ -999,6 +1090,17 @@ img {
 }
 
 
+.modal-wrapper-checkbox {
+    margin-bottom: 40px;
+}
+
+
+.checkbox:checked + .checkbox_user > .checkbox-user-span {
+    background-color: #fd9222;
+    border: transparent;
+    color: #fafafa;
+}
+
 .checkbox-user-span {
     border-radius: 6px;
     border: 1px solid rgba(17, 17, 17, 0.14);
@@ -1007,13 +1109,21 @@ img {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    color: transparent;
+    margin-right: 12px;
 }
 
-.checkbox-user {
+.checkbox-user-span svg {
+    fill: currentColor;
+}
+
+.checkbox_user {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.6);
+    cursor: pointer;
+    
 }
 
 .checkbox-user-link {
@@ -1021,5 +1131,27 @@ img {
     text-decoration: underline;
 
 }
+
+.form-btn {
+border-radius: 100px;
+padding: 14px 40px;
+min-width: 117px;
+height: 45px;
+background-color: #fd9222;
+border: 1px solid transparent;
+font-weight: 600;
+font-size: 14px;
+color: #fff;
+transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: color, background-color, border;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+    background-color: transparent;
+    border: 1px solid #fd9222;
+    color: #111;
+}
+
 
 /* #endregion Modal */
