@@ -3,23 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/chocolate.svg" type="image/svg" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta
+      name="description"
+      content="Treat yourself or a loved one to our finest ingridients for a moment of pure delight!"
+    />
+    <meta name="keywords" content="Chocolate, milk, cacao" />
     <title>SIMPLY CHOCOLATE</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      rel="shortcut icon"
+      href="./images/favicon.svg"
+      type="image/svg+xml"
     />
+    <link
+      rel="shortcut icon"
+      href="images/icons/chocolate.png"
+      type="image/png"
+    />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalise -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -27,95 +43,110 @@
     <header class="header" id="home">
       <div class="container">
         <nav class="header-nav">
-          <a class="logo" href="./index.html"
-            >SIMPLY<span class="logo-span">&nbsp;CHOCOLATE</span>
-            <img class="logo-img" src="./images/chocolate.svg" alt="logo" />
+          <a class="logo header-logo" href="./index.html">
+            <span class="logo-accent">SIMPLY</span>&nbsp;CHOCOLATE
+            <svg class="logo-img" width="24" height="24">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
           </a>
+          <button
+            class="menu-btn js-menu-btn"
+            type="button"
+            aria-label="Open menu button"
+          >
+            <svg class="menu-btn-icon" width="28" height="28">
+              <use href="./images/icons.svg#burger-icon"></use>
+            </svg>
+          </button>
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link" href="./index.html">Home</a>
+              <a class="header-nav-link active" href="#home">Home</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link current" href="#made">How it’s made?</a>
+              <a class="header-nav-link" href="#made">How it’s made?</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="#">Chocolate is loved</a>
+              <a class="header-nav-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-list-icon">
-          <li>
+        <ul class="socials header-socials">
+          <li class="socials-item">
             <a
-              class="header-iten-link"
+              class="socials-link"
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Link Facebook"
+              aria-label="Facebook link"
             >
-              <svg height="24" width="24">
+              <svg class="socials-icon" width="24" height="24">
                 <use href="./images/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
-          <li></li>
-          <li>
+          <li class="socials-item">
             <a
-              class="header-iten-link"
+              class="socials-link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram link"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a
+              class="socials-link"
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Link twitter"
-              ><img
-                src="./images/icons/twitter.svg"
-                width="24"
-                height="24"
-                alt="twitter"
-            /></a>
+              aria-label="Twitter link"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-        <button class="mobile-menu-btn" type="button">
-          <svg height="28" width="28">
-            <use href="./images/icons.svg#menu-icon"></use>
-          </svg>
-        </button>
       </div>
     </header>
-    <!-- #endregion /Header -->
+    <!-- #endregion Header -->
     <main>
       <!-- #region Hero -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">
-            Treat yourself or a loved one to our&nbsp;finest ingredients for a
+            Treat yourself or a loved one to our&nbsp;finest ingridients for a
             moment of pure delight!
           </h1>
           <div class="hero-wrapper">
-            <ul class="hero-list">
+            <ul class="hero-controls">
               <li class="hero-item">
-                <button class="btn btn-buy" type="button">Buy now</button>
+                <button class="btn btn-accent" type="button">Buy now</button>
               </li>
               <li class="hero-item">
-                <button class="btn btn-made" type="button">
+                <button class="btn btn-light" type="button">
                   How it’s made
                 </button>
               </li>
             </ul>
-            <a href="#" class="scroll-link"
-              >scroll down<img
-                src="./images/icons/arrow-down.svg"
-                alt="scroll down"
-                width="22"
-                height="22"
-            /></a>
+            <a class="hero-link" href="">
+              scroll down
+              <svg class="hero-link-icon" width="22" height="22">
+                <use href="./images/icons.svg#arrow-down"></use>
+              </svg>
+            </a>
           </div>
         </div>
-      </section> -->
-      <!-- #endregion /Hero -->
-
+      </section>
+      <!-- #endregion Hero -->
       <!-- #region Benefits -->
-      <section class="benefits">
+      <section class="benefits hide">
         <div class="container">
-          <h2 class="visually-hidden">Benefits</h2>
+          <h2 class="visually-hidden">Chocolate benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
               <div class="benefits-wrapper">
@@ -134,7 +165,7 @@
             <li class="benefits-item">
               <div class="benefits-wrapper">
                 <svg class="benefits-icon" width="32" height="32">
-                  <use href="./images/icons.svg#chocolate"></use>
+                  <use href="./images/icons.svg#coin"></use>
                 </svg>
               </div>
               <h3 class="benefits-caption">Affordable price</h3>
@@ -149,28 +180,70 @@
             <li class="benefits-item">
               <div class="benefits-wrapper">
                 <svg class="benefits-icon" width="32" height="32">
-                  <use href="./images/icons.svg#chocolate"></use>
+                  <use href="./images/icons.svg#spoon"></use>
                 </svg>
               </div>
               <h3 class="benefits-caption">Own production</h3>
               <p class="benefits-desc">
                 We take pride in our own production process, ensuring that every
                 step is carefully crafted to perfection. From selecting the
-                finest ingredients to handcrafting each piece, our attention to
+                finest ingridients to handcrafting each piece, our attention to
                 detail is evident in every bite.
               </p>
             </li>
+            <!-- <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#chocolate"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-caption">Unsurpassed taste</h3>
+              <p class="benefits-desc">
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#coin"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-caption">Affordable price</h3>
+              <p class="benefits-desc">
+                Indulge in high-quality chocolate without breaking the bank with
+                Simply Chocolate's selection of affordable treats. Enjoy
+                mouth-watering truffles and velvety chocolate bars without
+                sacrificing taste or quality. Browse our selection and indulge
+                in affordable luxury today.
+              </p>
+            </li>
+            <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#spoon"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-caption">Own production</h3>
+              <p class="benefits-desc">
+                We take pride in our own production process, ensuring that every
+                step is carefully crafted to perfection. From selecting the
+                finest ingridients to handcrafting each piece, our attention to
+                detail is evident in every bite.
+              </p>
+            </li> -->
           </ul>
         </div>
       </section>
-      <!-- #endregion /Benefits -->
-
+      <!-- #endregion Benefits -->
       <!-- #region Ingridients -->
-      <!-- <section class="ingridients">
+      <section class="ingridients">
         <div class="container">
-          <h2 class="ingridients-title title-decs">
+          <h2 class="ingridients-title">
             It all adds up to one exceptional
-            <span class="orange">taste</span> sensation
+            <span class="accent">taste</span> sensation
           </h2>
           <ul class="ingridients-list">
             <li class="ingridients-item">
@@ -178,10 +251,16 @@
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
               <img
-                src="./images/ingridients/img-1.png"
+                class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-1@1x.png 1x,
+                  ./images/ingridients/img-1@2x.png 2x
+                "
+                src="./images/ingridients/img-1@1x.png"
                 alt="MILK CHOCOLATE"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">MILK CHOCOLATE</h3>
             </li>
@@ -190,10 +269,16 @@
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
               <img
-                src="./images/ingridients/img-2.png"
+                class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-2@1x.png 1x,
+                  ./images/ingridients/img-2@2x.png 2x
+                "
+                src="./images/ingridients/img-2@1x.png"
                 alt="MILK"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">MILK</h3>
             </li>
@@ -202,10 +287,16 @@
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
               <img
-                src="./images/ingridients/img-3.png"
+                class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-3@1x.png 1x,
+                  ./images/ingridients/img-3@2x.png 2x
+                "
+                src="./images/ingridients/img-3@1x.png"
                 alt="NUTS"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">NUTS</h3>
             </li>
@@ -214,10 +305,16 @@
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
               <img
-                src="./images/ingridients/img-4.png"
+                class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-4@1x.png 1x,
+                  ./images/ingridients/img-4@2x.png 2x
+                "
+                src="./images/ingridients/img-4@1x.png"
                 alt="SEMI - SWEET CHOCOLATE"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">SEMI - SWEET CHOCOLATE</h3>
             </li>
@@ -226,10 +323,16 @@
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
               <img
-                src="./images/ingridients/img-5.png"
+                class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-5@1x.png 1x,
+                  ./images/ingridients/img-5@2x.png 2x
+                "
+                src="./images/ingridients/img-5@1x.png"
                 alt="CACAO"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">CACAO</h3>
             </li>
@@ -238,10 +341,16 @@
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
               <img
-                src="./images/ingridients/img-6.png"
+                class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-6@1x.png 1x,
+                  ./images/ingridients/img-6@2x.png 2x
+                "
+                src="./images/ingridients/img-6@1x.png"
                 alt="RASPBERRY"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">RASPBERRY</h3>
             </li>
@@ -250,34 +359,134 @@
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
               <img
-                src="./images/ingridients/img-7.png"
+                class="ingridients-ill"
+                srcset="
+                  ./images/ingridients/img-7@1x.png 1x,
+                  ./images/ingridients/img-7@2x.png 2x
+                "
+                src="./images/ingridients/img-7@1x.png"
                 alt="COCONUT OIL"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
+                loading="lazy"
               />
               <h3 class="ingridients-caption">COCONUT OIL</h3>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- #endregion Ingridients -->
 
-      <!-- #region Made -->
-      <!-- <section class="made" id="made">
+      <section class="portfolio">
         <div class="container">
-          <h2 class="made-title title-decs">
-            How it’s <span class="orange">made</span>?
+          <ul class="list">
+            <li class="list-item">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/img-1_tab.jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/portfolio/img-1_mob.jpg    1x,
+                    ./images/portfolio/img-1_mob@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="list-img"
+                  src="./images/portfolio/img-1.jpg"
+                  alt=""
+                  width="360"
+                  height="300"
+                />
+              </picture>
+            </li>
+            <li class="list-item">
+              <img
+                src="./images/portfolio/img-2.jpg"
+                alt=""
+                srcset="
+                  ./images/portfolio/img-2.jpg    1x,
+                  ./images/portfolio/img-2@2x.jpg 2x
+                "
+                width="360"
+                height="300"
+                class="list-img"
+              />
+            </li>
+            <li class="list-item">
+              <img
+                src="./images/portfolio/img-3.jpg"
+                alt=""
+                srcset="
+                  ./images/portfolio/img-3.jpg    1x,
+                  ./images/portfolio/img-3@2x.jpg 2x
+                "
+                width="360"
+                height="300"
+                class="list-img"
+              />
+            </li>
+            <li class="list-item">
+              <img
+                src="./images/portfolio/img.jpg"
+                alt=""
+                srcset="
+                  ./images/portfolio/img.jpg    1x,
+                  ./images/portfolio/img@2x.jpg 2x
+                "
+                width="396"
+                height="330"
+                class="list-img"
+              />
+            </li>
+            <li class="list-item">
+              <img
+                src="./images/portfolio/img-5.jpg"
+                alt=""
+                srcset="
+                  ./images/portfolio/img-5.jpg    1x,
+                  ./images/portfolio/img-5@2x.jpg 2x
+                "
+                width="360"
+                height="300"
+                class="list-img"
+              />
+            </li>
+            <li class="list-item">
+              <img
+                src="./images/portfolio/img-6.jpg"
+                alt=""
+                srcset="
+                  ./images/portfolio/img-6.jpg    1x,
+                  ./images/portfolio/img-6@2x.jpg 2x
+                "
+                width="360"
+                height="300"
+                class="list-img"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- #region Made -->
+      <section class="made hide" id="made">
+        <div class="container">
+          <h2 class="made-title section-title">
+            How it’s <span class="accent">made</span>?
           </h2>
           <div class="made-wrapper">
-            <div class="made-left">
+            <div class="made-left-side">
               <img
+                class="made-pic"
                 src="./images/made/image.jpg"
-                alt="chocolate"
+                alt="Pastry chef preparing chocolate cake"
                 width="600"
                 height="400"
               />
             </div>
-            <div class="made-right">
+            <div class="made-right-side">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
                 flavor
@@ -306,20 +515,20 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- #endregion Made -->
-
       <!-- #region Products -->
-      <!-- <section class="products">
+      <section class="products hide">
         <div class="container">
-          <h2 class="products-title title-decs">
-            Our <span class="orange">products</span>
+          <h2 class="products-title">
+            Our <span class="accent">products</span>
           </h2>
           <ul class="products-list">
             <li class="products-item">
               <img
+                class="products-ill"
                 src="./images/products/img-1.jpg"
-                alt="Dark chocolate"
+                alt=""
                 width="230"
                 height="201"
               />
@@ -329,8 +538,9 @@
             </li>
             <li class="products-item">
               <img
+                class="products-ill"
                 src="./images/products/img-2.jpg"
-                alt="Milk chocolate"
+                alt=""
                 width="230"
                 height="201"
               />
@@ -340,8 +550,9 @@
             </li>
             <li class="products-item">
               <img
+                class="products-ill"
                 src="./images/products/img-3.jpg"
-                alt="Dark chocolate"
+                alt=""
                 width="230"
                 height="201"
               />
@@ -351,8 +562,9 @@
             </li>
             <li class="products-item">
               <img
+                class="products-ill"
                 src="./images/products/img-4.jpg"
-                alt="Dark chocolate"
+                alt=""
                 width="230"
                 height="201"
               />
@@ -362,8 +574,9 @@
             </li>
             <li class="products-item">
               <img
+                class="products-ill"
                 src="./images/products/img-5.jpg"
-                alt="Milk chocolate"
+                alt=""
                 width="230"
                 height="201"
               />
@@ -373,8 +586,9 @@
             </li>
             <li class="products-item">
               <img
+                class="products-ill"
                 src="./images/products/img-6.jpg"
-                alt="Milk chocolate"
+                alt=""
                 width="230"
                 height="201"
               />
@@ -384,8 +598,9 @@
             </li>
             <li class="products-item">
               <img
+                class="products-ill"
                 src="./images/products/img-7.jpg"
-                alt="Dark chocolate"
+                alt=""
                 width="230"
                 height="201"
               />
@@ -395,8 +610,9 @@
             </li>
             <li class="products-item">
               <img
+                class="products-ill"
                 src="./images/products/img-8.jpg"
-                alt="White chocolate"
+                alt=""
                 width="230"
                 height="201"
               />
@@ -406,21 +622,21 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- #endregion Products -->
-
-      <!-- #region Sellers -->
-      <!-- <section class="sellers">
+      <!-- #region Bestsellers -->
+      <section class="bestsellers hide">
         <div class="container">
-          <h2 class="sellers-title title-decs">
-            <span class="orange">Top</span> sellers
+          <h2 class="bestsellers-title">
+            <span class="accent">Top</span> sellers
           </h2>
-          <ul class="sellers-list">
-            <li class="sellers-item">
-              <div class="overlay-wraper">
+          <ul class="bestsellers-list">
+            <li class="bestsellers-item">
+              <div class="bestsellers-wrapper">
                 <img
-                  src="./images/sellers/img-1.jpg"
-                  alt="CHOCOLATE WITH NUTS"
+                  class="bestsellers-img"
+                  src="./images/bestsellers/img-1.jpg"
+                  alt=""
                   width="368"
                   height="464"
                 />
@@ -431,15 +647,14 @@
                   creating a true poetry of taste.
                 </p>
               </div>
-              <div class="sellers-item-wrapper">
-                <h3 class="sellers-sup-title">CHOCOLATE WITH NUTS</h3>
-              </div>
+              <h3 class="bestsellers-caption">CHOCOLATE WITH NUTS</h3>
             </li>
-            <li class="sellers-item">
-              <div class="overlay-wraper">
+            <li class="bestsellers-item">
+              <div class="bestsellers-wrapper">
                 <img
-                  src="./images/sellers/img-2.jpg"
-                  alt="CHOCOLATE WITH FRUITS"
+                  class="bestsellers-img"
+                  src="./images/bestsellers/img-2.jpg"
+                  alt=""
                   width="368"
                   height="464"
                 />
@@ -450,15 +665,14 @@
                   creating a true poetry of taste.
                 </p>
               </div>
-              <div class="sellers-item-wrapper">
-                <h3 class="sellers-sup-title">CHOCOLATE WITH FRUITS</h3>
-              </div>
+              <h3 class="bestsellers-caption">CHOCOLATE WITH FRUITS</h3>
             </li>
-            <li class="sellers-item">
-              <div class="overlay-wraper">
+            <li class="bestsellers-item">
+              <div class="bestsellers-wrapper">
                 <img
-                  src="./images/sellers/img-3.jpg"
-                  alt="DARK CHOCOLATE"
+                  class="bestsellers-img"
+                  src="./images/bestsellers/img-3.jpg"
+                  alt=""
                   width="368"
                   height="464"
                 />
@@ -470,24 +684,22 @@
                   of cocoa solids compared to milk chocolate.
                 </p>
               </div>
-              <div class="sellers-item-wrapper">
-                <h3 class="sellers-sup-title">DARK CHOCOLATE</h3>
-              </div>
+              <h3 class="bestsellers-caption">DARK CHOCOLATE</h3>
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- #endregion Sellers -->
-
+      </section>
+      <!-- #endregion Bestsellers -->
       <!-- #region Reviews -->
-      <!-- <section class="reviews" id="reviews">
+      <section class="reviews hide" id="reviews">
         <div class="container">
-          <h2 class="reviews-title title-decs">
-            <span class="orange">Chocolate</span> is loved
+          <h2 class="reviews-title">
+            <span class="accent">Chocolate</span> is loved
           </h2>
           <ul class="reviews-list">
             <li class="reviews-item">
               <img
+                class="reviews-avatar"
                 src="./images/reviews/img-1.png"
                 alt="Victoria Dobrzhanska"
                 width="80"
@@ -501,6 +713,7 @@
             </li>
             <li class="reviews-item">
               <img
+                class="reviews-avatar"
                 src="./images/reviews/img-2.png"
                 alt="Nazar Babenko"
                 width="80"
@@ -515,6 +728,7 @@
             </li>
             <li class="reviews-item">
               <img
+                class="reviews-avatar"
                 src="./images/reviews/img-3.png"
                 alt="Olena Kampusch"
                 width="80"
@@ -528,22 +742,24 @@
               </p>
             </li>
           </ul>
-          <button class="btn-reviews" type="button">Leave a review</button>
+          <button class="btn btn-dark reviews-btn" type="button">
+            Leave a review
+          </button>
         </div>
-      </section> -->
+      </section>
       <!-- #endregion Reviews -->
     </main>
-
     <!-- #region Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer hide">
       <div class="container">
         <div class="footer-top">
           <p class="footer-slogan">
-            <span class="orange">Chocolate</span> a delicious cure for a bad day
+            <span class="accent">Chocolate</span> a delicious cure for a bad day
           </p>
+
           <div class="footer-wrapper">
             <p class="footer-caption">Social networks</p>
-            <ul class="socials">
+            <ul class="socials footer-socials">
               <li class="socials-item">
                 <a
                   class="socials-link"
@@ -552,12 +768,9 @@
                   rel="noopener noreferrer"
                   aria-label="Facebook link"
                 >
-                  <img
-                    src="./images/icons/facebook.svg"
-                    alt="Facebook icon"
-                    width="24"
-                    height="24"
-                  />
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li class="socials-item">
@@ -568,12 +781,9 @@
                   rel="noopener noreferrer"
                   aria-label="Instagram link"
                 >
-                  <img
-                    src="./images/icons/instagram.svg"
-                    alt="Instagram icon"
-                    width="24"
-                    height="24"
-                  />
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
               <li class="socials-item">
@@ -584,30 +794,29 @@
                   rel="noopener noreferrer"
                   aria-label="Twitter link"
                 >
-                  <img
-                    src="./images/icons/twitter.svg"
-                    alt="Twitter icon"
-                    width="24"
-                    height="24"
-                  />
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
           </div>
+
           <address class="footer-address">
             <p class="footer-caption">Contact us</p>
             <ul class="footer-contacts">
               <li class="footer-contacts-item">
-                <a class="footer-contacts-link" href="tel:+380684439426"
-                  >+380 (68) 443-94-26</a
-                >
+                <a class="footer-contacts-link" href="tel:+380684439426">
+                  +380 (68) 443-94-26
+                </a>
               </li>
               <li class="footer-contacts-item">
                 <a
                   class="footer-contacts-link"
                   href="mailto:simplychoc@gmail.com"
-                  >simplychoc@gmail.com</a
                 >
+                  simplychoc@gmail.com
+                </a>
               </li>
             </ul>
           </address>
@@ -615,7 +824,7 @@
         <div class="footer-bottom">
           <ul class="footer-menu">
             <li class="footer-menu-item">
-              <a class="footer-menu-link" href="#made">Home</a>
+              <a class="footer-menu-link" href="#home">Home</a>
             </li>
             <li class="footer-menu-item">
               <a class="footer-menu-link" href="#made">How it’s made?</a>
@@ -626,121 +835,183 @@
           </ul>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- #endregion Footer -->
-    <!-- <a class="arrow-top-link" href="#home">
-      <svg width="50" height="50">
-        <use href="./images/icons.svg#arrow-top"></use>
-      </svg>
-    </a> -->
-
     <!-- #region Modal -->
-    <div class="backdrop">
+    <div class="backdrop hide">
       <div class="modal">
-        <button class="close-modal-btn" type="button">
-          <svg class="close-modal-icon" height="14" width="14">
-            <use href="./images/icons.svg#close-black"></use>
+        <button class="modal-btn" type="button">
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#x-close"></use>
           </svg>
         </button>
-        <p class="modal-text">
-          LEAVE A REVIEW ABOUT <span class="orange">OUR CHOCOLATE</span>
+        <p class="modal-caption">
+          LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
         </p>
-        <form name="form_chocolate" autocomplete="off">
+        <form class="modal-form" name="review_form" autocomplete="off">
           <div class="modal-wrapper">
             <label class="modal-label" for="user_name">Name</label>
-            <div class="modal-filed">
+            <div class="modal-field">
               <input
-                class="modal-fieled-input"
-                id="user_name"
+                class="modal-field-input"
                 type="text"
+                id="user_name"
                 name="user_name"
+                placeholder="&nbsp;"
                 required
-                maxlength="40"
-                placeholder=" "
-                pattern="[A-Za-z0-9]{6,}"
+                minlength="2"
+                pattern="[a-zA-Z]+\s[a-zA-Z]+"
+                title="Phrase should include 2 words separated by coma"
               />
-              <svg class="modal-filed-icon" width="24" height="24">
+              <svg class="modal-field-icon" width="24" height="24">
                 <use href="./images/icons.svg#user"></use>
               </svg>
-              <svg class="modal-icon-valid" width="24" height="24">
-                <use class="success" href="./images/icons.svg#success"></use>
+              <svg class="modal-valid-icon" width="24" height="24">
                 <use class="error" href="./images/icons.svg#error"></use>
+                <use class="success" href="./images/icons.svg#success"></use>
               </svg>
-              <span class="modal-text-invalid"
-                >Ви написали менше 6 символів.</span
-              >
+              <span class="error-text">
+                Phrase should include 2 words separated by coma
+              </span>
             </div>
           </div>
           <div class="modal-wrapper">
             <label class="modal-label" for="user_email">Email</label>
-            <div class="modal-filed">
+            <div class="modal-field">
               <input
-                class="modal-fieled-input"
-                id="user_email"
+                class="modal-field-input"
                 type="email"
+                id="user_email"
                 name="user_email"
                 required
-                placeholder=" "
-                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
               />
-              <svg class="modal-filed-icon" width="24" height="24">
-                <use href="./images/icons.svg#mail"></use>
-              </svg>
-              <svg class="modal-icon-valid" width="24" height="24">
-                <use class="success" href="./images/icons.svg#success"></use>
-                <use class="error" href="./images/icons.svg#error"></use>
+              <svg class="modal-field-icon" width="24" height="24">
+                <use href="./images/icons.svg#email"></use>
               </svg>
             </div>
           </div>
           <div class="modal-wrapper">
             <label class="modal-label" for="user_phone">Phone number</label>
-            <div class="modal-filed">
+            <div class="modal-field">
               <input
-                class="modal-fieled-input"
-                id="user_phone"
+                class="modal-field-input"
                 type="tel"
+                id="user_phone"
                 name="user_phone"
               />
-              <svg class="modal-filed-icon" width="24" height="24">
+              <svg class="modal-field-icon" width="24" height="24">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-textarea-wrapper">
-            <label class="modal-label" for="coment-user">Comment</label>
+          <div class="modal-wrapper">
+            <label class="modal-label" for="user_message">Comment</label>
             <textarea
-              class="modal-textarea"
-              name="coment-user"
-              id="coment_user"
+              class="modal-message"
+              name="user_message"
+              id="user_message"
+              rows="4"
               placeholder="Enter text"
-              maxlength="700"
+              required
+              minlength="10"
+              maxlength="1000"
             ></textarea>
           </div>
 
-          <div class="modal-wrapper-checkbox">
-            <input
-              class="checkbox visually-hidden"
-              type="checkbox"
-              name="checkbox_user"
-              id="checkbox_user"
-            />
-            <label for="checkbox_user" class="checkbox_user"
-              ><span class="checkbox-user-span">
-                <svg width="10" height="8">
-                  <use href="./images/icons.svg#vector"></use></svg></span
-              >I accept the terms and conditions of the&nbsp;<a
-                class="checkbox-user-link"
-                href="#"
-                >Privacy Policy</a
-              ></label
-            >
-          </div>
+          <label class="agreement">
+            <input class="visually-hidden" type="checkbox" value="true" />
+            <span class="agreement-checkbox">
+              <svg class="agreement-checkbox-icon" width="10" height="10">
+                <use href="./images/icons.svg#check-mark"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="agreement-checkbox-link" href="#" target="_blank">
+              Privacy Policy
+            </a>
+          </label>
 
-          <button class="form-btn" type="submit">Send</button>
+          <button class="btn btn-accent" type="submit">Send</button>
         </form>
       </div>
     </div>
-
     <!-- #endregion Modal -->
+    <!-- #region Mobile menu -->
+    <div class="menu-container">
+      <button class="menu-btn js-menu-btn" aria-label="Close menu button">
+        <svg class="menu-btn-icon" width="10" height="10">
+          <use href="./images/icons.svg#x-close"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-list">
+        <li class="menu-list-item">
+          <a href="" class="menu-list-link active">Studio</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="" class="menu-list-link">Portfolio</a>
+        </li>
+        <li class="menu-list-item">
+          <a href="" class="menu-list-link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="menu-contacts">
+        <li class="menu-contacts-item">
+          <a class="menu-contacts-link" href="tel:+110001111111">
+            +11 (000) 111-11-11
+          </a>
+        </li>
+        <li class="menu-contacts-item">
+          <a class="menu-contacts-link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="socials menu-socials">
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook link"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram link"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter link"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- #endregion -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
